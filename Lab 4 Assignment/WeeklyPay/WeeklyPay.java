@@ -1,0 +1,30 @@
+// Class: CSE 1321L
+// Section:09
+// Term:Fall 
+// Instructor:Shweta Khandal 
+// Name:Rutvik Marakana 
+// Lab#:Java
+import java.util.Scanner;
+class WeeklyPay
+{
+  public static void main( String [] args)
+  {  float GrossPay=0;
+     Scanner sc=new Scanner(System.in);
+     System.out.print("Enter the number of hours worked in a week:");
+     int hours=sc.nextInt();
+     System.out.println("You entered - "+hours+ " hours");
+      if(hours<=40)
+      { 
+        GrossPay=hours*10;
+      }
+       
+      else if(hours>40)
+        {
+         GrossPay=400+(hours-40)*15;
+        }
+      
+     System.out.println("Gross earning is $"+GrossPay);
+  }
+} 
+  
+ 
